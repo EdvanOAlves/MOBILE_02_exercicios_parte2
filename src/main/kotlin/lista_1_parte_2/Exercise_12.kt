@@ -1,0 +1,28 @@
+package lista_1_parte_2
+
+//12 -) Escreva um programa que conte de 1 a 100 e:
+//● Se for múltiplo de 3, mostre “Batata”
+//● Se for múltiplo de 5, mostre “Quente”
+//● Se for múltiplo de 3 e 5, mostre “BatataQuente”
+class Exercise_12 {
+    companion object {
+        fun hotPotato() {
+            var list = 1..100
+            var trigger = false
+            for (i in list) {
+                if (i % 3 == 0) {
+                    print("Batata")
+                    trigger = true
+                }
+                if (i % 5 == 0) {
+                    print("Quente")
+                    trigger = true
+                }
+                if (trigger) {
+                    print("\n")
+                    trigger = false
+                }
+            }
+        }
+    }
+}
