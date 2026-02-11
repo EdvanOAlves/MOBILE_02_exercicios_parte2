@@ -10,6 +10,7 @@ class Exercise_12 {
             var list = 1..100
             var trigger = false
             for (i in list) {
+                print(i)
                 if (i % 3 == 0) {
                     print("Batata")
                     trigger = true
@@ -23,6 +24,13 @@ class Exercise_12 {
                     trigger = false
                 }
             }
+            //O que foi feito acima, só que mais inteligente
+//            for (numero in 1..100){
+//                print(numero)
+//                if(numero% 3 == 0) print("Batata ")
+//                if(numero% 5 == 0) print("Quente")
+//                println()
+//            }
         }
     }
 }
