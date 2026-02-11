@@ -44,12 +44,14 @@ fun main() {
 
 //    18 -) Crie um array de objetos representando produtos (nome, preço) e mostre o nome do produto mais caro
     //Criando array
-    val product1 = (Product("Mesa digitalizadora", 287.23F))
-    val product2 = (Product("Sketchbook", 35.00F))
-    val product3 = (Product("Teclado", 45.00f))
-    val productArray: Array<Product> = arrayOf(product1, product2, product3)
+    val productArray: Array<Product> = arrayOf(
+        (Product("Drawing tablet", 287.23F)),
+        (Product("Sketchbook", 35.00F)),
+        (Product("Keyboard", 45.00f))
+    )
 
-    println(Exercise_18.getMostExpensive(productArray))
+    val mostExpensive: Product = Exercise_18.getMostExpensive(productArray)
+    println("${mostExpensive.name} is the most expensive product on the list, costing R$${mostExpensive.price}")
 
 //    19 -) Crie uma classe “ContaBancaria” com os atributos “nomeTitular” e “saldo” (privado) e crie funções para depositar um valor, sacar um valor e para consultar o saldo
     val bankAccount = BankAccount("Riquinho", 1000.00F)
